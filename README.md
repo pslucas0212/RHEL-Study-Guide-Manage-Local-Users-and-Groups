@@ -2,13 +2,16 @@
 
 [RHEL Study Guide - Table of Contents](https://github.com/pslucas0212/RHEL-Study-Guide)  
 
-A user id is kept in the /etc/passwd file.  The file has the user ID, password, UID, GID, Group Name, User home directory and default shell
+A user id is kept in the /etc/passwd file.  The passwd file has the user ID, password, UID, GID, Group Name, User home directory and default shell
 ```
+# cat /etc/passwd
+....
 student:x:1000:1000:Student User:/home/student:/bin/bash
 ```
  
-Group names and IDs are stored in the /etc/group file.  The has group name, x, GID, x
+Group names and IDs are stored in the /etc/group file.  The group file has group name, x, GID, x
 ```
+# cat /etc/group
 ...
 consultants:x:35000:
 ```
@@ -21,7 +24,14 @@ consultant1 : consultant1 consultants
 uid=1002(consultant1) gid=1002(consultant1) groups=1002(consultant1),35000(consultants)
 ```
 
-
+User passwords are stored in the /etc/shadow file.  The password file has the username, encrypted password, Days since Jan 1, 1970 that password was last changed, the minimum number of days required between password changes i, The maximum number of days the password is valid, number of days warning password expiration
+```
+# cat /etc/shadow
+...
+consultant1:!!:19727:0:30:7:::
+consultant2:!!:19727:0:30:7:::
+consultant3:!!:19727:0:30:7:::
+```
 
 User /etc/login.defs to change maximum number of days a password can be used
 ```
