@@ -28,16 +28,9 @@ Change the new users password
 # passwd consultant1
 ```
 
-Set password expiration date with chage -E.  In the example expire in 90 days from today.
-```
-# date -d "+90 days" +%F
-2024-04-03
-# chage -E 2024-04-03 consultant1
-```
 
-
-| chage -switch username |
-|------------------------|
+| chage -switch username                        |
+|-----------------------------------------------|
   
 | Switch  | Result |
 |---------|--------|
@@ -45,6 +38,14 @@ Set password expiration date with chage -E.  In the example expire in 90 days fr
 | -M      | Set time between changing passwords |
 | -d      | xx|
 | -l      | List account password aging |
+
+Set password expiration date with chage -E.  In the example expire in 90 days from today.
+```
+# date -d "+90 days" +%F
+2024-04-03
+# chage -E 2024-04-03 consultant1
+```
+
 
 Change a users password to expired every 15 days
 ```
