@@ -35,8 +35,7 @@ Set password expiration date with chage -E.  In the example expire in 90 days fr
 # chage -E 2024-04-03 consultant1
 ```
 
-| chage command switches | 
-|------------------------|
+
 | chage -switch username |
 |------------------------|
 | Switch  | Result |
