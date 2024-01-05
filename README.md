@@ -35,13 +35,15 @@ Set password expiration date with chage -E.  In the example expire in 90 days fr
 # chage -E 2024-04-03 consultant1
 ```
 
- chage command switches 
-------------------------
-Switch  | Result
--E      | Set password expiration date
--M      | Set time between changing passwords
--d      | 
--l      | List account password aging
+| chage command switches | 
+|------------------------|
+| chage -switch username |
+|------------------------|
+| Switch  | Result|
+| -E      | Set password expiration date
+| -M      | Set time between changing passwords |
+| -d      | xx|
+| -l      | List account password aging |
 
 Change a users password to expired every 15 days
 ```
