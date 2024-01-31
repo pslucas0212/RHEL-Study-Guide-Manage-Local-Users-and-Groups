@@ -74,6 +74,8 @@ consultant2:$6$RbMgZTSPsdQsqGZk$EcW...860V6/:19727:0:30:7:::
 consultant3:$6$6Br9Jv7YLPSkZ3je$4I6...9My9W.:19727:0:30:7:::
 ```
 
+Use the 'chage' command to view and change user password expiry information  
+
 
 | chage -switch username                        |
 |-----------------------------------------------|
@@ -82,7 +84,7 @@ consultant3:$6$6Br9Jv7YLPSkZ3je$4I6...9My9W.:19727:0:30:7:::
 |---------|--------|
 | -E      | Set password expiration date |
 | -M      | Set maxium dates between changing passwords |
-| -d      | xx|
+| -d      | Set date of last password change|
 | -l      | List account password aging |
 
 Set password expiration date with chage -E.  In the example expire in 90 days from today.
