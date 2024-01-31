@@ -50,6 +50,11 @@ Make a group part of sudoers by creating a group specific sudoers file under /et
 ```
 %consultants ALL=(ALL) ALL
 ```
+In the above line:
+- %consultants – the group named "consultants" (% prefix)
+- ALL= – on all hosts (if you distribute the same sudoers file to many computers)
+- (ALL) – as any target user
+- ALL – can run any command
 
 Create new users and assigned them to a "custom" group
 ```
